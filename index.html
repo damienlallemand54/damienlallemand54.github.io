@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Damien Lallemand — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#">DL.dev</a>
+    <div class="nav-links">
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div style="max-width:1200px; margin: 0 auto;">
+
+    <section class="hero">
+      <div>
+        <div class="hero-tag">Développeur .NET</div>
+        <div class="hero-name">Damien<br>Lallemand</div>
+        <div class="hero-title">C# · .NET · Back-end</div>
+        <p class="hero-desc">Développeur back-end formé chez OpenClassrooms, spécialisé en C# .NET. Passionné par la conception d'APIs robustes et d'applications performantes.</p>
+      </div>
+      <div class="hero-code">
+        <span class="code-line"><span class="kw">public class</span> <span class="cls">Developer</span></span>
+        <span class="code-line">{</span>
+        <span class="code-line">&nbsp;&nbsp;<span class="kw">public string</span> <span class="prop">Name</span> = <span class="str">"Damien Lallemand"</span>;</span>
+        <span class="code-line">&nbsp;&nbsp;<span class="kw">public string</span> <span class="prop">Stack</span> = <span class="str">"C# .NET"</span>;</span>
+        <span class="code-line">&nbsp;&nbsp;<span class="kw">public string</span> <span class="prop">Formation</span> = <span class="str">"OpenClassrooms"</span>;</span>
+        <span class="code-line">&nbsp;</span>
+        <span class="code-line">&nbsp;&nbsp;<span class="kw">public</span> <span class="cls">IEnumerable</span>&lt;<span class="cls">Project</span>&gt; <span class="prop">GetProjects</span>()</span>
+        <span class="code-line">&nbsp;&nbsp;{</span>
+        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> Projects.<span class="prop">Where</span>(p =&gt;</span>
+        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p.<span class="prop">IsCompleted</span> == <span class="kw">true</span>); <span class="cmt">// ✓</span></span>
+        <span class="code-line">&nbsp;&nbsp;}</span>
+        <span class="code-line">}</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-header">
+        <span class="section-num">01 /</span>
+        <span class="section-title">Projets</span>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-icon">🌐</div>
+            <span class="card-status">Terminé</span>
+          </div>
+          <div class="card-name">HomeSkolar</div>
+          <p class="card-desc">Application web complète en architecture MVC avec gestion CRUD et interface utilisateur responsive.</p>
+          <div class="card-tags">
+            <span class="tag">ASP.NET MVC</span>
+            <span class="tag">Razor</span>
+            <span class="tag">C#</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-github" href="https://github.com/VOTRE_PSEUDO/homeskolar" target="_blank">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Voir sur GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-icon">🗄️</div>
+            <span class="card-status">Terminé</span>
+          </div>
+          <div class="card-name">NexaWorks</div>
+          <p class="card-desc">Modélisation et accès aux données avec EF Core, migrations, requêtes LINQ et optimisation des performances.</p>
+          <div class="card-tags">
+            <span class="tag">Entity Framework</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">LINQ</span>
+            <span class="tag">C#</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-github" href="https://github.com/VOTRE_PSEUDO/nexaworks" target="_blank">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Voir sur GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-top">
+            <div class="card-icon">🔌</div>
+            <span class="card-status">Terminé</span>
+          </div>
+          <div class="card-name">Findexium</div>
+          <p class="card-desc">API RESTful complète avec authentification JWT, gestion des rôles et documentation Swagger.</p>
+          <div class="card-tags">
+            <span class="tag">ASP.NET Core</span>
+            <span class="tag">C#</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Swagger</span>
+          </div>
+          <div class="card-footer">
+            <a class="card-github" href="https://github.com/VOTRE_PSEUDO/findexium" target="_blank">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              Voir sur GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-header">
+        <span class="section-num">02 /</span>
+        <span class="section-title">Compétences</span>
+      </div>
+      <div class="skills-groups">
+
+        <div class="skill-group">
+          <div class="skill-group-title">Langages & Frameworks</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">C#</span></div>
+            <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">.NET</span></div>
+            <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">ASP.NET Core MVC</span></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Architecture</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">API REST</span></div>
+            <div class="skill-item"><div class="skill-dot"></div><span class="skill-name">Microservices</span></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Base de données</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot green"></div><span class="skill-name">SQL Server</span></div>
+            <div class="skill-item"><div class="skill-dot green"></div><span class="skill-name">Entity Framework</span></div>
+            <div class="skill-item"><div class="skill-dot green"></div><span class="skill-name">LINQ</span></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Tests</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot amber"></div><span class="skill-name">Tests unitaires</span></div>
+            <div class="skill-item"><div class="skill-dot amber"></div><span class="skill-name">xUnit</span></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Outils & CI/CD</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot amber"></div><span class="skill-name">Git</span></div>
+            <div class="skill-item"><div class="skill-dot amber"></div><span class="skill-name">Docker</span></div>
+            <div class="skill-item"><div class="skill-dot amber"></div><span class="skill-name">CI/CD</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-header">
+        <span class="section-num">03 /</span>
+        <span class="section-title">À propos</span>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          Développeur back-end en formation, j'obtiens mon diplôme <strong>Développeur C# .NET</strong> chez OpenClassrooms en <strong>2026</strong>. Je m'intéresse particulièrement à la conception d'<strong>architectures propres</strong>, aux bonnes pratiques (SOLID, Clean Code) et à la <strong>performance des APIs</strong>.<br><br>
+          Je recherche une <strong>alternance</strong> pour continuer à apprendre et me former, notamment sur de nouvelles technologies — élargir mes compétences côté <strong>frontend</strong> comme continuer à progresser en <strong>backend</strong>.
+        </p>
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-num">C#</div>
+            <div class="stat-label">Langage principal</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">OC</div>
+            <div class="stat-label">Formation certifiante</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2026</div>
+            <div class="stat-label">Diplômé</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">ALT</div>
+            <div class="stat-label">Recherche alternance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-header">
+        <span class="section-num">04 /</span>
+        <span class="section-title">Contact</span>
+      </div>
+      <div class="contact-row">
+        <a class="contact-btn primary" href="mailto:damien.lallemand@email.com">📧 damien.lallemand@email.com</a>
+        <a class="contact-btn" href="https://github.com/" target="_blank">GitHub</a>
+        <a class="contact-btn" href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-text"><span class="footer-dot"></span>Damien Lallemand — Portfolio</span>
+      <span class="footer-text">© 2026</span>
+    </footer>
+
+  </div>
+
+</body>
+</html>
