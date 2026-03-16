@@ -186,10 +186,6 @@
       border: 1px solid rgba(127,198,164,0.2);
     }
     .card-status.in-progress {
-      font-family: var(--mono);
-      font-size: 11px;
-      padding: 3px 8px;
-      border-radius: 4px;
       background: rgba(240,160,75,0.12);
       color: #f0a04b;
       border: 1px solid rgba(240,160,75,0.2);
